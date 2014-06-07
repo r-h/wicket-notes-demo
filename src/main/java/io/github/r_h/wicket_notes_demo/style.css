@@ -1,0 +1,28 @@
+#header {
+	border: 1px solid black;
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+
+#navigation {
+	display: inline;
+}
+
+#user {
+	float: right;
+	display: inline;
+}
+
+#page {
+	border: 1px solid black;
+	padding: 0.5em;
+}
+
+input {
+	margin: 0.2em;
+}
+
+.feedbackPanelERROR {
+	color: red;
+}
+

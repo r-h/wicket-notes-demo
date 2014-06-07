@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<body>
+<wicket:extend>
+	<form wicket:id="noteForm">
+	<div>
+	<div>Header: <input wicket:id="header" type="text" /></div>
+	<div><textarea wicket:id="text" cols="80" rows="20" ></textarea></div>
+	<div>Timestamp: <input wicket:id="timestamp" type="text" /></div>
+	<div><input wicket:id="cancelButton" type="submit" value="Cancel" /> <input wicket:id="saveButton" type="submit" value="Save" /></div>
+	</div>
+	</form>
+</wicket:extend>
+</body>
+</html>
