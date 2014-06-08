@@ -19,16 +19,19 @@ public class SortableNotesDataProvider extends SortableDataProvider<Note> {
 		this.dao = dao;
 	}
 
+	@Override
 	public Iterator<Note> iterator(int first, int count) {
 		SortParam sp = getSort();
 		return dao.findAll(first, count, sp.getProperty(), sp.isAscending())
 				.iterator();
 	}
 
+	@Override
 	public int size() {
 		return (int) dao.countAll();
 	}
 
+	@Override
 	public IModel<Note> model(Note object) {
 		return Model.of(object);
 	}
