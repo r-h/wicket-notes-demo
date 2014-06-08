@@ -7,11 +7,6 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceException;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Order;
-import javax.persistence.criteria.Path;
-import javax.persistence.criteria.Root;
 
 import org.springframework.orm.jpa.JpaCallback;
 import org.springframework.stereotype.Component;
@@ -31,23 +26,26 @@ public class NoteDaoImpl extends AbstractDaoImpl<Note> implements NoteDao {
 		return getJpaTemplate().execute(new JpaCallback<List<Note>>() {
 			public List<Note> doInJpa(EntityManager em)
 					throws PersistenceException {
-				CriteriaBuilder builder = em.getCriteriaBuilder();
-				CriteriaQuery<Note> select = builder.createQuery(Note.class);
-				Root<Note> note = select.from(Note.class);
-				Path<Object> sort = note.get(sortProperty);
-				Order order = null;
-				if (sortAscending) {
-					order = builder.asc(sort);
-				} else {
-					order = builder.desc(sort);
-				}
-				select.orderBy(order);
-
-				TypedQuery<Note> query = em.createQuery(select);
-
-				// TypedQuery<Note> query = em.createQuery(
-				// "from Note order by " + sortProperty + " "
-				// + (sortAscending ? "asc" : "desc"), Note.class);
+				
+				/* breaks with user.name sorting.....*/
+//				CriteriaBuilder builder = em.getCriteriaBuilder();
+//				CriteriaQuery<Note> select = builder.createQuery(Note.class);
+//				Root<Note> note = select.from(Note.class);				
+//				Path<Object> sort = note.get(sortProperty);
+//				Order order = null;
+//				if (sortAscending) {
+//					order = builder.asc(sort);
+//				} else {
+//					order = builder.desc(sort);
+//				}
+//				select.orderBy(order);
+//
+//				TypedQuery<Note> query = em.createQuery(select);
+				
+				/* workaround for user.name sorting... */
+				 TypedQuery<Note> query = em.createQuery(
+				 "from Note order by " + sortProperty + " "
+				 + (sortAscending ? "asc" : "desc"), Note.class);
 
 				query.setFirstResult(offset);
 				query.setMaxResults(count);

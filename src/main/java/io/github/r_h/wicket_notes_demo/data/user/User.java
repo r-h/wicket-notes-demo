@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * The entity.
+ * The user entity.
  */
 @Entity
 @NamedQuery(name = "User.findByUsername", query = "select u from User u where upper(u.name) = upper(:name)")
@@ -41,7 +41,6 @@ public class User implements Serializable {
 
 	@NotNull
 	@Size(min = 1, max = 20)
-	
 	public String getName() {
 		return name;
 	}

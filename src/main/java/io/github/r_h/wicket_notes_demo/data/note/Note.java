@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
- * The entity.
+ * The note entity.
  */
 @Entity
 @SuppressWarnings("serial")
