@@ -7,6 +7,8 @@ A tech demo which uses Wicket, Spring, JPA2, JSR-303 (Bean-Validation) to implem
 This webapp provides a per user notes functionality, meaning that different users can login and create, read, update and
 delete notes.
 
+![wicket-notes-demo](https://github.com/r-h/wicket-notes-demo/raw/master/wicket-notes-demo.png)
+
 Beside that the notes can be sorted by their attributes and are presented in a pageable result table.
 
 The webapp was written using [Apache Wicket](http://wicket.apache.org/) to demonstrate a component oriented webapp using
