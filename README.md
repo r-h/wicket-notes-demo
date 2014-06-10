@@ -14,6 +14,8 @@ Beside that the notes can be sorted by their attributes and are presented in a p
 The webapp was written using [Apache Wicket](http://wicket.apache.org/) to demonstrate a component oriented webapp using
 POJOs which use [JSR-303 Annotations](http://beanvalidation.org/1.0/spec/) for validation constraints.
 
+For presentation of the notes in the application [jggrid-Plugin for wiquery](https://code.google.com/p/wiquery-plugins/) is used.
+
 The POJOs are loaded and persisted using [JPA2](https://jcp.org/en/jsr/detail?id=317) with [Hibernate ORM](http://hibernate.org/)
 as the persistence provider.
 
@@ -63,7 +65,7 @@ The application consists of three main components, namely :
 - `NotesPage` which contains a pageable and limited result listing for all notes,
 - `NotePage` which is used to create and edit notes and also gives a detailed view on a single `Note` entity.
 
-The login  is done in a ``Form``(provided by Wicket)  which ensures via the mentioned JSR-303 annotations that the entered user and
+The login  is done in a ``Form``(provided by Wicket)  which ensures via the mentioned JSR-303 annotations at the entities that the entered user and
 password information is not empty and between one and twenty characters long.
 
 After checking that the given credentials represent a valid ``User`` entity, the `NotesPages` is set as the response page.
