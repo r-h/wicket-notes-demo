@@ -1,4 +1,4 @@
-# wicket-notes-demo [![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+# wicket-notes-demo [![Build Status](https://travis-ci.org/r-h/wicket-notes-demo.svg?branch=master)](https://travis-ci.org/r-h/wicket-notes-demo)
 
 A tech demo which uses Wicket, Spring, JPA2, JSR-303 (Bean-Validation) to implement a multi-user notes app in Java
 
