@@ -42,9 +42,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.odlabs.wiquery</groupId>
-			<artifactId>wiquery</artifactId>
-			<version>1.2.1</version>
+			<groupId>org.openengsb.forks</groupId>
+			<artifactId>org.odlabs.wiquery</artifactId>
+			<version>1.2.4.w1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.zenika.wicket.contrib</groupId>
