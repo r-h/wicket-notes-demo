@@ -260,12 +260,6 @@
 
 	<repositories>
 		<repository>
-			<id>wiquery repository</id>
-			<name>wiQuery repository</name>
-			<url>http://wiquery.googlecode.com/svn/repo/</url>
-			<layout>default</layout>
-		</repository>
-		<repository>
 			<id>r-h-repository</id>
 			<name>Maven repository for artifacts which some r-h-projects depend on</name>
 			<url>https://raw.github.com/r-h/maven-repository/master/snapshots</url>
