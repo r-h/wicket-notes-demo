@@ -14,7 +14,7 @@ public class Start {
 		connector.setPort(8080);
 		server.setConnectors(new Connector[] { connector });
 
-		// FIXME : Do we want to add jetty-webapp dep for this ?! 
+		// FIXME : Do we want to add jetty-webapp dep for this ?! https://stackoverflow.com/questions/56402140/how-do-i-set-a-context-path-with-embedded-jetty
 		// WebContext bb = new WebContext();
 		//bb.setServer(server);
 		//bb.setContextPath("/");

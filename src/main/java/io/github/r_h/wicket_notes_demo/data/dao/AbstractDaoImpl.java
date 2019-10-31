@@ -7,11 +7,10 @@ import java.util.Set;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceException;
+import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
-import org.springframework.orm.jpa.JpaCallback;
-import org.springframework.orm.jpa.support.JpaDaoSupport;
+import org.springframework.stereotype.Repository;
 
 /**
  * Implementation of the DAO.
@@ -19,10 +18,13 @@ import org.springframework.orm.jpa.support.JpaDaoSupport;
  * @param <T>
  *            type of the object
  */
-public abstract class AbstractDaoImpl<T extends Serializable> extends
-		JpaDaoSupport implements Dao<T> {
+@Repository
+public abstract class AbstractDaoImpl<T extends Serializable> implements Dao<T> {
 
 	private final Class<T> type;
+
+	@PersistenceContext
+   	private EntityManager entityManager;
 
 	public AbstractDaoImpl(Class<T> type) {
 		this.type = type;
@@ -30,41 +32,36 @@ public abstract class AbstractDaoImpl<T extends Serializable> extends
 
 	@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 	public T load(Serializable id) {
-		return getJpaTemplate().find(type, id);
+		return entityManager.find(type, id);
 	}
 
 	@TransactionAttribute
 	public T save(T object) {
-		return getJpaTemplate().merge(object);
+		return entityManager.merge(object);
 	}
 
 	@TransactionAttribute
 	public void delete(T object) {
 		T merged = save(object);
-		getJpaTemplate().remove(merged);
+		entityManager.remove(merged);
 	}
 
 	@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 	public Set<T> findAll() {
-		return getJpaTemplate().execute(new JpaCallback<Set<T>>() {
-			public Set<T> doInJpa(EntityManager em) throws PersistenceException {
-				TypedQuery<T> query = em.createQuery(
+				TypedQuery<T> query = entityManager.createQuery(
 						"select x from " + type.getName() + " x", type);
 				return new HashSet<T>(query.getResultList());
-			}
-		});
 	}
 
 	@TransactionAttribute(TransactionAttributeType.SUPPORTS)
-	public long countAll() {
-		return getJpaTemplate().execute(new JpaCallback<Integer>() {
-			public Integer doInJpa(EntityManager em)
-					throws PersistenceException {
-				TypedQuery<Long> query = em.createQuery("select count(x) from "
+	public long countAll() {				
+				TypedQuery<Long> query = entityManager.createQuery("select count(x) from "
 						+ type.getName() + " x", Long.class);
 				return (query.getSingleResult()).intValue();
-			}
-		});
+	}
+
+	protected EntityManager getEntityManager(){
+		return entityManager;
 	}
 
 }
