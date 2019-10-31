@@ -15,7 +15,7 @@
 		<wicket.version>1.4.14</wicket.version>
 		<jaxb.version>2.2.11</jaxb.version>
 		<jetty.version>9.4.17.v20190418</jetty.version>
-		<org.springframework.version>4.3.17.RELEASE</org.springframework.version>
+		<org.springframework.version>4.3.18.RELEASE</org.springframework.version>
 	</properties>
 
 	<dependencies>
@@ -63,6 +63,12 @@
 			<groupId>org.apache.wicket</groupId>
 			<artifactId>wicket-spring</artifactId>
 			<version>${wicket.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>cglib</groupId>
+					<artifactId>cglib-nodep</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
