@@ -1,25 +1,24 @@
 package io.github.r_h.wicket_notes_demo;
 
-import org.mortbay.jetty.Connector;
-import org.mortbay.jetty.Server;
-import org.mortbay.jetty.bio.SocketConnector;
-import org.mortbay.jetty.webapp.WebAppContext;
+import org.eclipse.jetty.server.Connector;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.ServerConnector;
 
 public class Start {
 
 	public static void main(String[] args) throws Exception {
 		Server server = new Server();
-		SocketConnector connector = new SocketConnector();
+		ServerConnector connector = new ServerConnector(server);
 		// Set some timeout options to make debugging easier.
-		connector.setMaxIdleTime(1000 * 60 * 60);
-		connector.setSoLingerTime(-1);
+		connector.setIdleTimeout(1000 * 60 * 60);
 		connector.setPort(8080);
 		server.setConnectors(new Connector[] { connector });
 
-		WebAppContext bb = new WebAppContext();
-		bb.setServer(server);
-		bb.setContextPath("/");
-		bb.setWar("src/main/webapp");
+		// FIXME : Do we want to add jetty-webapp dep for this ?! 
+		// WebContext bb = new WebContext();
+		//bb.setServer(server);
+		//bb.setContextPath("/");
+		//bb.setWar("src/main/webapp");
 
 		
 		// START JMX SERVER
@@ -28,7 +27,7 @@ public class Start {
 		// server.getContainer().addEventListener(mBeanContainer);
 		// mBeanContainer.start();
 		
-		server.addHandler(bb);
+		//server.addHandler(bb);
 
 		try {
 			System.out.println(">>> STARTING EMBEDDED JETTY SERVER, PRESS ANY KEY TO STOP");
