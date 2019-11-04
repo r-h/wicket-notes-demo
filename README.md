@@ -28,13 +28,14 @@ You will need :
 ## If you dont want to install anything locally...
 
 A github.com account (if you dont have one, you really want one, it is free.. :)
-[https://github.com/join?source=header-home](https://i.pinimg.com/originals/dc/ef/3a/dcef3abedf0e0761203aaeb85886a6f3.jpg)
+
+[https://github.com/join?source=header-home]
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/r-h/wicket-notes-demo.git)
 
 ## For building and trying this on your local system
 
-Obviously [git](|https://git-scm.com/)
+Obviously [git](https://git-scm.com/)
 Input in your cmd / (git-) bash / Terminal :
 
 `   git clone https://github.com/r-h/wicket-notes-demo.git`
@@ -45,7 +46,7 @@ a working internet connection, so that depencies can be dowloaded.
 
 
 # Building and running
-After the Prerequisites, enter in your local cmd / (git-)bash or ([gitpodi.io|https://www.gitpod.io/]) terminal
+After the Prerequisites, enter in your local cmd / (git-)bash or ([gitpodi.io}|https://www.gitpod.io/) terminal
 
 `    mvn clean package jetty:run`
 
