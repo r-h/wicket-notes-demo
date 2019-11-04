@@ -33,7 +33,7 @@ A github.com account (if you dont have one, [you really want one, it is free](ht
 
 ## For building and trying this on your local system
 
-Obviously [git](https://git-scm.com/)
+Obviously [git](https://git-scm.com/).
 
 Input in your cmd / (git-) bash / Terminal :
 
@@ -45,7 +45,7 @@ a working internet connection, so that depencies can be dowloaded.
 
 
 # Building and running
-After the **prerequisites** are met, enter in your local cmd / (git-)bash or ([gitpodi.io](https://www.gitpod.io/) terminal
+After the **prerequisites** are met, enter in your local cmd / (git-)bash or ([gitpodi.io](https://www.gitpod.io/)) terminal
 
 `    mvn clean package jetty:run`
 
@@ -56,7 +56,7 @@ For being in [gitpodi.io](https://www.gitpod.io/) press on the ["Open in Browser
 **For tryouts on your local system**
 
 Enter 
-`    http://localhost:8080`
+`   [http://localhost:8080](http://localhost:8080)`
 
 in the web-browser of your choice.
 
