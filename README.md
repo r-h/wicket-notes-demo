@@ -27,9 +27,7 @@ You will need :
 
 ## If you dont want to install anything locally...
 
-A github.com account (if you dont have one, you really want one, it is free.. :)
-
-[https://github.com/join?source=header-home]
+A github.com account (if you dont have one, [you really want one, it is free](https://github.com/join?source=header-home).. :)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/r-h/wicket-notes-demo.git)
 
