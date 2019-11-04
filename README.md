@@ -34,6 +34,7 @@ A github.com account (if you dont have one, [you really want one, it is free](ht
 ## For building and trying this on your local system
 
 Obviously [git](https://git-scm.com/)
+
 Input in your cmd / (git-) bash / Terminal :
 
 `   git clone https://github.com/r-h/wicket-notes-demo.git`
@@ -44,13 +45,13 @@ a working internet connection, so that depencies can be dowloaded.
 
 
 # Building and running
-After the **prerequisites** are met, enter in your local cmd / (git-)bash or ([gitpodi.io}|https://www.gitpod.io/) terminal
+After the **prerequisites** are met, enter in your local cmd / (git-)bash or ([gitpodi.io](|https://www.gitpod.io/) terminal
 
 `    mvn clean package jetty:run`
 
 to compile, package and launch the project.
 
-For being in [gitpodi.io](https://www.gitpod.io/] press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
+For being in [gitpodi.io](https://www.gitpod.io/) press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
 
 **For tryouts on your local system**
 
@@ -62,7 +63,7 @@ in the web-browser of your choice.
 Alternatively you can run the project from your favorite IDE
 by running the `io.github.r_h.wicket_notes_demo.Start`-class.
 
-#Login
+# Login
 
 Currently there are only two predefined users:
 `admin` with p/w `admin`
