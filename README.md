@@ -46,13 +46,13 @@ a working internet connection, so that depencies can be dowloaded.
 
 
 # Building and running
-After the Prerequisites, enter in your local cmd / (git-)bash or ([gitpodi.io}|https://www.gitpod.io/) terminal
+After the **prerequisites** are met, enter in your local cmd / (git-)bash or ([gitpodi.io}|https://www.gitpod.io/) terminal
 
 `    mvn clean package jetty:run`
 
 to compile, package and launch the project.
 
-For being in [gitpodi.io|https://www.gitpod.io/] press on the ["Open in Browser"-Link|https://www.gitpod.io/blog/gitpodify/#opening-previews]
+For being in [gitpodi.io](https://www.gitpod.io/] press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
 
 **For tryouts on your local system**
 
