@@ -56,7 +56,7 @@ For being in [gitpodi.io](https://www.gitpod.io/) press on the ["Open in Browser
 **For tryouts on your local system**
 
 Enter 
-`   [http://localhost:8080](http://localhost:8080)`
+`   http://localhost:8080]`
 
 in the web-browser of your choice.
 
