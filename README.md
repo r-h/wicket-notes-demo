@@ -1,6 +1,6 @@
 # wicket-notes-demo [![Build Status](https://travis-ci.org/r-h/wicket-notes-demo.svg?branch=master)](https://travis-ci.org/r-h/wicket-notes-demo)
 
-A tech demo which uses Wicket, Spring, JPA2, JSR-303 (Bean-Validation) to implement a multi-user notes app in Java
+A tech demo which uses Wicket, Spring 4, JPA2, JSR-303 (Bean-Validation) to implement a multi-user notes app in Java
 
 # About
 
@@ -25,34 +25,44 @@ The [Spring Framework](http://projects.spring.io/spring-framework/) was used for
 
 You will need :
 
-a JDK >= 6, like [Oracle JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or [OpenJDK](http://openjdk.java.net/install/index.html),
+## If you dont want to install anything locally...
 
-[Maven >= 3](http://maven.apache.org/download.cgi), 
+A github.com account (if you dont have one, you really want one, it is free.. :) -> https://github.com/join?source=header-home )
 
-a working internet connection, so that maven can download missing deps.
- 
-An IDE is recommended, but not required
-e.g. [Eclipse](http://www.eclipse.org/) with [Maven-Plugin](https://www.eclipse.org/m2e/), [Qwickie Plugin](https://code.google.com/p/qwickie/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/r-h/wicket-notes-demo.git)
+
+## For building and trying this on your local system
+
+Obviously [git|https://git-scm.com/]
+Input in your cmd / (git-) bash / Terminal :
+
+`   git clone https://github.com/r-h/wicket-notes-demo.git`
+
+a JDK >= 8, like e.g [OpenJDK](http://openjdk.java.net/install/index.html),
+
+a working internet connection, so that depencies can be dowloaded.
+
 
 # Building and running
-After cloning this repo, in the project folder do a
+After the Prerequisites, enter in your local cmd / (git-)bash or ([gitpodi.io|https://www.gitpod.io/]) terminal
 
-`    mvn clean package`
+`    mvn clean package jetty:run`
 
-to compile and package the project.
+to compile, package and launch the project.
 
-The resulting WAR under the target folder should run in virtually every
-servlet container that supports servlet spec 2.4
+For being in [gitpodi.io|https://www.gitpod.io/] press on the ["Open in Browser"-Link|https://www.gitpod.io/blog/gitpodify/#opening-previews]
 
-To run the app in place, do a 
+**For tryouts on your local system**
 
-`    mvn jetty:run`
+Enter 
+`    http://localhost:8080`
 
-you then should be able to connect with your web-browser
-to 'http://localhost:8080/'
+in the web-browser of your choice.
 
 Alternatively you can run the project from your favorite IDE
 by running the `io.github.r_h.wicket_notes_demo.Start`-class.
+
+#Login
 
 Currently there are only two predefined users:
 `admin` with p/w `admin`
