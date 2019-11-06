@@ -27,7 +27,7 @@ You will need :
 
 ## If you dont want to install anything locally...
 
-A github.com account (if you dont have one, [you really want one, it is free](https://github.com/join?source=header-home).. :)
+A [github.com account](https://github.com/login?return_to=%2Fr-h%2Fwicket-notes-demo) (if you dont have one... [![Github Sign Up!](https://img.shields.io/badge/Github-Sign%20Up%20!-brightgreen?logo=github&style=plastic)](https://github.com/join?source_repo=r-h%2Fmaven-repository) .. it is free ! :)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/r-h/wicket-notes-demo.git)
 
@@ -35,23 +35,26 @@ A github.com account (if you dont have one, [you really want one, it is free](ht
 
 Obviously [git](https://git-scm.com/).
 
-Input in your cmd / (git-) bash / Terminal :
+Input in your (Windows-) cmd, (Un!x / Linux/ git-) bash or (MacOS-) Terminal :
 
 `   git clone https://github.com/r-h/wicket-notes-demo.git`
 
-a JDK >= 8, like e.g [OpenJDK](http://openjdk.java.net/install/index.html),
+Install a JDK >= 8, like e.g [OpenJDK](http://openjdk.java.net/install/index.html),
 
-a working internet connection, so that depencies can be dowloaded.
+Have a working internet connection, so that depencies can be dowloaded.
 
 
 # Building and running
-After the **prerequisites** are met, enter in your local cmd / (git-)bash or ([gitpodi.io](https://www.gitpod.io/)) terminal
+After the **prerequisites** are met, enter in your local  (Un!x / Linux/ git-) bash or ([gitpodi.io](https://www.gitpod.io/) / MacOs-) Terminal:
 
-`    mvn clean package jetty:run`
+`    ./mvnw clean package jetty:run`
+or in your (Windows-) cmd:
+
+`    ./mvnw.cmd clean package jetty:run`
 
 to compile, package and launch the project.
 
-For being in [gitpodi.io](https://www.gitpod.io/) press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
+For being in [gitpod.io](https://www.gitpod.io/) press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
 
 **For tryouts on your local system**
 
