@@ -22,7 +22,7 @@ as the persistence provider.
 The [Spring Framework](http://projects.spring.io/spring-framework/) was used for dependency injection and transaction management.
 
 # Prerequisites
-## to 
+## to have a look at the code and try things out
 
 You will need :
 
@@ -57,9 +57,11 @@ or in your (Windows-) cmd:
 
 to compile, package and launch the project.
 
-For being in [gitpod.io](https://www.gitpod.io/) press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
+**For being in [gitpod.io](https://www.gitpod.io/)**
 
-**For tryouts on your local system**
+press on the ["Open in Browser"-Link](https://www.gitpod.io/blog/gitpodify/#opening-previews)
+
+**For trying things out on your local system**
 
 Enter 
 `   http://localhost:8080`
@@ -68,9 +70,10 @@ in the web-browser of your choice.
 
 Alternatively you can run the project from your favorite IDE
 
-[![Download Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-Donwload%20!-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/download) or
-[![Download Eclipse!](https://img.shields.io/badge/Eclipse-Download%20!-blue.svg?logo=eclipse)](https://www.eclipse.org/downloads/) or
-[![Download IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-Donwload!-blue.svg?logo=intellij-idea)](https://www.jetbrains.com/idea/download)
+[![Download VS Code](https://img.shields.io/badge/VS%20Code-Donwload%20!-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/download) or
+[![Download Eclipse!](https://img.shields.io/badge/Eclipse-Download%20!-blueviolet.svg?logo=eclipse)](https://www.eclipse.org/downloads/) or
+[![Download IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-Donwload!-orange.svg?logo=intellij-idea)](https://www.jetbrains.com/idea/download) or
+[![Download Netbeans](https://img.shields.io/badge/Netbeans-Donwload%20!-ff69b4.svg?logo=java)](https://netbeans.apache.org/download/index.html)
 
 by running the `io.github.r_h.wicket_notes_demo.Start`-class.
 
