@@ -66,12 +66,14 @@ Enter
 
 in the web-browser of your choice.
 
-Alternatively you can run the project from your favorite IDE
+**Alternatively..**
+
+you can run the project from your favorite IDE
 
 [![Download VS Code](https://img.shields.io/badge/VS%20Code-Donwload%20!-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/download) or
 [![Download Eclipse!](https://img.shields.io/badge/Eclipse-Download%20!-blueviolet.svg?logo=eclipse)](https://www.eclipse.org/downloads/) or
 [![Download Netbeans](https://img.shields.io/badge/Netbeans-Donwload%20!-7396.svg?logo=java)](https://netbeans.apache.org/download/index.html) or
-[![Download IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-Donwload!-orange.svg?logo=intellij-idea)](https://www.jetbrains.com/idea/download)
+[![Download IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-Donwload%20!-orange.svg?logo=intellij-idea)](https://www.jetbrains.com/idea/download)
 
 by running the `io.github.r_h.wicket_notes_demo.Start`-class.
 
