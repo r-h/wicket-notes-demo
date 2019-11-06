@@ -70,7 +70,7 @@ Alternatively you can run the project from your favorite IDE
 
 [![Download Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-Donwload%20!-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/download) or
 [![Download Eclipse!](https://img.shields.io/badge/Eclipse-Download%20!-blue.svg?logo=eclipse)](https://www.eclipse.org/downloads/) or
-[![Download IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA%-Donwload!-blue.svg?logo=intellijidea)](https://www.jetbrains.com/idea/download)
+[![Download IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-Donwload!-blue.svg?logo=intellij-idea)](https://www.jetbrains.com/idea/download)
 
 by running the `io.github.r_h.wicket_notes_demo.Start`-class.
 
