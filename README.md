@@ -27,7 +27,9 @@ You will need :
 
 ## If you dont want to install anything locally...
 
-A [github.com account](https://github.com/login?return_to=%2Fr-h%2Fwicket-notes-demo) (if you dont have one... [![Github Sign Up!](https://img.shields.io/badge/Github-Sign%20Up%20!-brightgreen?logo=github&style=plastic)](https://github.com/join?source_repo=r-h%2Fmaven-repository) .. it is free ! :)
+A [github.com account](https://github.com/login?return_to=%2Fr-h%2Fwicket-notes-demo) (if you dont have one... [![Github Sign Up!](https://img.shields.io/badge/Github-Sign%20Up%20!-brightgreen?logo=github&style=flat)](https://github.com/join?source_repo=r-h%2Fmaven-repository) .. it is free ! :)
+
+Open in an Online IDE:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/r-h/wicket-notes-demo.git)
 
@@ -43,11 +45,11 @@ Install a JDK >= 8, like e.g [OpenJDK](http://openjdk.java.net/install/index.htm
 
 Have a working internet connection, so that depencies can be dowloaded.
 
-
 # Building and running
 After the **prerequisites** are met, enter in your local  (Un!x / Linux/ git-) bash or ([gitpodi.io](https://www.gitpod.io/) / MacOs-) Terminal:
 
 `    ./mvnw clean package jetty:run`
+
 or in your (Windows-) cmd:
 
 `    ./mvnw.cmd clean package jetty:run`
@@ -64,6 +66,10 @@ Enter
 in the web-browser of your choice.
 
 Alternatively you can run the project from your favorite IDE
+
+[![Download Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-Donwload!-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/download) or
+[![Download Eclipse!](https://img.shields.io/badge/Eclipse-Download!-blue.svg?logo=eclipse)](https://www.eclipse.org/downloads/)
+
 by running the `io.github.r_h.wicket_notes_demo.Start`-class.
 
 # Login
