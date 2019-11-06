@@ -26,15 +26,15 @@ The [Spring Framework](http://projects.spring.io/spring-framework/) was used for
 
 You will need :
 
-## If you dont want to install anything locally...
+### If you dont want to install anything locally...
 
 A [github.com account](https://github.com/login?return_to=%2Fr-h%2Fwicket-notes-demo) (if you dont have one... [![Github Sign Up!](https://img.shields.io/badge/Github-Sign%20Up%20!-brightgreen?logo=github&style=flat)](https://github.com/join?source_repo=r-h%2Fmaven-repository) .. it is free ! :)
 
 Open in an Online IDE: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/r-h/wicket-notes-demo.git)
 
-## For building and trying this on your local system
+### For building and trying this on your local system
 
-Obviously [git](https://git-scm.com/).
+You need obviously [git](https://git-scm.com/).
 
 Input in your (Windows-) cmd, (Un!x / Linux/ git-) bash or (MacOS-) Terminal :
 
