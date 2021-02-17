@@ -1,4 +1,4 @@
-# wicket-notes-demo ![Java CI with Maven](https://github.com/r-h/wicket-notes-demo/workflows/Java%20CI%20with%20Maven/badge.svg)
+# wicket-notes-demo ![Java CI with Maven](https://github.com/r-h/wicket-notes-demo/workflows/Java%20CI%20with%20Maven/badge.svg) [![Travis Build Status](https://travis-ci.org/r-h/wicket-notes-demo.svg?branch=master)](https://travis-ci.org/r-h/wicket-notes-demo)
 
 A tech demo which uses [Wicket](https://wicket.apache.org/), [Spring 4](https://spring.io/), [JPA2](https://jcp.org/en/jsr/detail?id=317), [JSR-303 (Bean-Validation)](http://beanvalidation.org/1.0/spec/) to implement a multi-user notes app in Java
 
