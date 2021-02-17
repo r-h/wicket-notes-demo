@@ -72,10 +72,27 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.openengsb.forks</groupId>
 			<artifactId>org.odlabs.wiquery</artifactId>
 			<version>1.2.4.w1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.codehaus.jackson</groupId>
+					<artifactId>jackson-mapper-asl</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.zenika.wicket.contrib</groupId>
 			<artifactId>wicket-jsr303-validators</artifactId>
